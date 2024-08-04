@@ -22,8 +22,8 @@ export const metadata = {
     title: 'AI-900 Quiz',
     description: 'A chatbot to help you prepare for the AI-900 exam by Microsoft.',
     type: 'website',
-    url: 'https://test900.iand.dev',
-    image: 'https://test900.iand.dev/opengraph-image.png',
+    url: 'https://ai900.iand.dev',
+    image: 'https://ai900.iand.dev/opengraph-image.png',
     site_name: 'AI-900 Quiz',
     locale: 'en_US'
   },
