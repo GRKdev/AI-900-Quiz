@@ -291,6 +291,15 @@ export function Quiz({ props: question }: QuizProps) {
                     (question.questionType === 'multi' && isSubmitted)) &&
                     !questionState.nextQuestionClicked && (
                         <div className="flex justify-between w-full">
+                            {isFinalQuestion && questionState.selectedAnswer !== null && (
+                                <Button
+                                    variant="default"
+                                    onClick={handleSeeResults}
+                                    className={cn(buttonVariants({ variant: "quiz", size: "sm" }))}
+                                >
+                                    <BarChart2 className="size-4 mr-1" /><span className="hidden md:flex">{question.seeResultsTitle}</span>
+                                </Button>
+                            )}
                             {!isFinalQuestion && (
                                 <Button
                                     variant="default"
@@ -319,15 +328,7 @@ export function Quiz({ props: question }: QuizProps) {
 
                         </div>
                     )}
-                {isFinalQuestion && questionState.selectedAnswer !== null && (
-                    <Button
-                        variant="default"
-                        onClick={handleSeeResults}
-                        className={cn(buttonVariants({ variant: "quiz", size: "sm" }))}
-                    >
-                        <BarChart2 className="size-4 mr-1" /><span className="hidden md:flex">{question.seeResultsTitle}</span>
-                    </Button>
-                )}
+
             </div>
         </div>
     );
