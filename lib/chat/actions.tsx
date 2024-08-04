@@ -424,7 +424,8 @@ async function submitUserMessage(content: string, quizState: QuizState) {
 async function generateExplanation(prompt: string, answer: string) {
   try {
     const result = await streamText({
-      model: groq('llama-3.1-70b-versatile'),
+      // model: groq('llama-3.1-70b-versatile'),
+      model: openai('gpt-4o-mini'),
       messages: [
         { role: 'system', content: `Provide a detailed explanation of the previous question when requested by the user.\n\nQuestion: ${prompt}\n\nAnswer: ${answer}` },
         { role: 'user', content: prompt }
