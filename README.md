@@ -12,7 +12,7 @@ Interactive chatbot designed to help users prepare for the Microsoft AI-900 cert
 - Quiz with easy, intermediate, and hard questions
 - Support for 16 languages
 - Utilizes Vercel's AI SDK for UI streaming and LLM responses
-- Over 500 custom questions based on Microsoft's documentation
+- Over 600 custom questions based on Microsoft's documentation
 
 ## Motivation
 
@@ -83,9 +83,10 @@ npm install
 
 3. Set up environment variables:
 - Rename `.env.example` to `.env`
-- Open the `.env` file and add your OpenAI API key:
+- Open the `.env` file and add your OpenAI & Groq API keys:
   ```
   OPENAI_API_KEY=your_api_key_here
+  GROQ_API_KEY=your_api_key_here
   ```
 
 4. Run the development server:
