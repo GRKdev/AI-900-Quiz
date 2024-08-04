@@ -7,6 +7,7 @@ import { TailwindIndicator } from '@/components/tailwind-indicator'
 import { Providers } from '@/components/providers'
 import { Header } from '@/components/header'
 import { Toaster } from '@/components/ui/sonner'
+import { Analytics } from "@vercel/analytics/react"
 
 export const metadata = {
   title: {
@@ -61,6 +62,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
             <Header />
             <main className="flex flex-col flex-1 bg-primary-foreground">{children}</main>
           </div>
+          <Analytics />
           <TailwindIndicator />
         </Providers>
       </body>
