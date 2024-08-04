@@ -1,4 +1,4 @@
- <a href="https://test900.iand.dev/">
+ <a href="https://ai900.iand.dev/">
   <img alt="Next.js 14 and App Router-ready AI chatbot." src="./app/opengraph-image.png">
   <h1 align="center">AI-900 Quiz</h1>
 </a>
@@ -41,7 +41,7 @@ This project was born out of two main motivations:
 
 - Quiz state is managed using localStorage to save results
 
-- Mora than 600 questions, created with ChatGPT 4o, the final quiz from the AI-900 learn.microsoft.com from every module, the AI-900 exam guide and samples from internet.
+- More than 600 questions, created with ChatGPT 4o, the final quiz from the AI-900 learn.microsoft.com from every module, the AI-900 exam guide and samples from internet.
 
 - Managing language with LLM streaming to the component.
 
