@@ -1,0 +1,7 @@
+{
+    "functions": {
+      "app/(chat)/page.tsx": {
+        "maxDuration": 60
+      }
+    }
+  }
